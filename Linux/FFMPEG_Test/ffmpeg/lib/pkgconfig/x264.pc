@@ -1,0 +1,11 @@
+prefix=/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: x264
+Description: H.264 (MPEG4 AVC) encoder library
+Version: 0.164.3172
+Libs: -L${exec_prefix}/lib -lx264 -lpthread -lm -ldl
+Libs.private: 
+Cflags: -I${prefix}/include 

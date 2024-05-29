@@ -1,0 +1,14 @@
+prefix=/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output
+exec_prefix=${prefix}
+libdir=/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output/lib
+includedir=/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output/include
+
+Name: libavdevice
+Description: FFmpeg device handling library
+Version: 60.4.100
+Requires: libavfilter >= 9.14.100, libswscale >= 7.6.100, libpostproc >= 57.4.100, libavformat >= 60.18.100, libavcodec >= 60.35.100, libswresample >= 4.13.100, libavutil >= 58.32.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavdevice -lm -latomic -lxcb -lXau -lXdmcp -lxcb-shm -lxcb -lXau -lXdmcp -lasound -lm -ldl -lpthread -lrt -L/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output/lib -lSDL2 -lm -ldl -lpthread -lrt -lXv -lXext -lX11 -lpthread -lxcb -lXau -lXdmcp -lX11 -lpthread -lxcb -lXau -lXdmcp -lXext -lX11 -lpthread -lxcb -lXau -lXdmcp
+Libs.private: 
+Cflags: -I${includedir}

@@ -1,0 +1,14 @@
+prefix=/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output
+exec_prefix=${prefix}
+libdir=/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output/lib
+includedir=/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 58.32.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lvdpau -lX11 -lm -latomic -lX11 -lpthread -lxcb -lXau -lXdmcp
+Libs.private: 
+Cflags: -I${includedir}

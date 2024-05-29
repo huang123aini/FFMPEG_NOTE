@@ -1,0 +1,14 @@
+prefix=/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output
+exec_prefix=${prefix}
+libdir=/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output/lib
+includedir=/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 60.35.100
+Requires: libswresample >= 4.13.100, libavutil >= 58.32.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -L/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output/lib -lvpx -lm -lpthread -L/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output/lib -lvpx -lm -lpthread -L/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output/lib -lvpx -lm -lpthread -L/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output/lib -lvpx -lm -lpthread -pthread -lm -latomic -L/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output/lib -lfdk-aac -lm -lmp3lame -lm -L/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output/lib -lopus -lm -L/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output/lib -lx264 -lpthread -lm -ldl -L/home/lixiang/Documents/hsp/FFMPEG_Learn/build_script/MyFFmpeg/ffmpeg_build/output/lib -lx265 -lstdc++ -lm -lgcc_s -lgcc -lgcc_s -lgcc -lrt -ldl -lz
+Libs.private: 
+Cflags: -I${includedir}
